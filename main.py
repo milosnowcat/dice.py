@@ -4,6 +4,7 @@
 
 import tkinter as ttk
 import ttkbootstrap as ttk
+from PIL import Image, ImageTk
 
 root = ttk.Window(themename="vapor")
 root.title("Dice.py")
@@ -12,8 +13,9 @@ root.geometry("700x400")
 frm = ttk.Frame(root)
 frm.pack(padx=30, pady=40)
 
-dice_image = ttk.PhotoImage(file='assets/images/cat.png')
-Label(frm, image=dice_image).pack()
+number_image = "assets/images/cat.png"
+dice_image = ImageTk.PhotoImage(Image.open(number_image).resize((200, 200)))
+ttk.Label(frm, image=dice_image).pack()
 
 ttk.Button(frm, text="Roll Dice").pack(pady=20)
 
