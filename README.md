@@ -25,6 +25,12 @@ Before installing the project, ensure you have Python installed on your system. 
    cd dice.py
    ```
 
+3. Install the project dependencies using pip:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 That's it! You have successfully cloned the Dice.py project with the required dice images inside the assets folder.
 
 ---
